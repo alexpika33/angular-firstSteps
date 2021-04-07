@@ -3,6 +3,8 @@
 <div *ngIf="product">
   <h3>{{ product.name }}</h3>
   <h4>{{ product.price | currency }}</h4>
+  <!--En el precio usamos un pipe para transformar el precio de number a string-->
   <p>{{ product.description }}</p>
-
+  <!--añadimos boton para la funcion de añadir al carrito-->
+  <button (click)="addToCart(product)">Buy</button>
 </div>

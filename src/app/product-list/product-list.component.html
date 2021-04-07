@@ -1,6 +1,7 @@
 <h2>Products</h2>
 <div *ngFor="let product of products">
   <h3>
+    <!--title es el titulo del producto y en routerLInk definimos el nombre del link al clicar en el -->
     <a
       [title]="product.name + ' details' "
       [routerLink]="['/products', product.id]"
